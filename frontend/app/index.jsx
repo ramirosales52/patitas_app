@@ -15,10 +15,10 @@ import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 // import axios from "axios";
 // import auth from "@react-native-firebase/auth";
-// import Button from "../components/Button";
-// import Divider from "../components/Divider";
+import Button from "../components/Button";
+import Divider from "../components/Divider";
 import { useColorScheme } from "nativewind";
-// import InputField from "../components/InputField";
+import InputField from "../components/InputField";
 // import { BACKEND_URL, FIREBASE_WEB_CLIENT_ID } from "@env";
 
 export default function Login() {
@@ -154,7 +154,8 @@ export default function Login() {
 
           {/* Buttons */}
           <View className="justify-center items-center mb-2">
-            <Button label="INGRESAR" primary onPress={signIn} />
+                                                {/* signIn  */}
+            <Button label="INGRESAR" primary onPress={()=>{}} />
             <Button
               label="REGISTRARSE"
               secondary
@@ -163,8 +164,8 @@ export default function Login() {
           </View>
 
           <Divider />
-
-          <Button google onPress={onGoogleButtonPress} />
+              {/* onGoogleButtonPress */}
+          <Button google onPress={()=>{}} />
         </View>
       </View>
     </ScrollView>
