@@ -35,17 +35,17 @@ export default function Button({ label, primary, secondary, google, onPress }) {
       )}
       {google && (
         <TouchableOpacity
-          className="w-full justify-center items-center bg-red-500"
+          className="w-full justify-center items-center"
           onPress={onPress}
         >
           <View
             className={`items-center justify-center py-3 rounded-lg w-10/12 border flex-row border-[#6a5bba] ${colorScheme === "dark" ? "bg-neutral-950" : "bg-white"}`}
           >
-            {/* <Image
+            <Image
               source={require("../assets/Google_iddt-qQAj1_4.png")}
               resizeMode="stretch"
-              className="w-1 h-1 mr-20"
-            /> */}
+              className="w-6 h-6 mr-2"
+            />
             <Text
               className={`${colorScheme === "dark" ? "text-white" : "text-[#3e367f]"} font-medium`}
             >
@@ -62,3 +62,4 @@ export default function Button({ label, primary, secondary, google, onPress }) {
     </>
   );
 }
+
