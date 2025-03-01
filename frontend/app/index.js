@@ -154,8 +154,14 @@ export default function Login() {
 
           {/* Buttons */}
           <View className="justify-center items-center mb-2">
-                                                {/* signIn  */}
-            <Button label="INGRESAR" primary onPress={()=>{}} />
+            {/* signIn  */}
+            <Button
+              label="INGRESAR"
+              primary
+              onPress={() => {
+                router.push("/(auth)/(tabs)/home");
+              }}
+            />
             <Button
               label="REGISTRARSE"
               secondary
@@ -164,8 +170,8 @@ export default function Login() {
           </View>
 
           <Divider />
-              {/* onGoogleButtonPress */}
-          <Button google onPress={()=>{}} />
+          {/* onGoogleButtonPress */}
+          <Button google onPress={() => {}} />
         </View>
       </View>
     </ScrollView>
